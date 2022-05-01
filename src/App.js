@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import { LeftBar } from "./components/main";
+import { About, Contact, Experience, Home, Services, Works } from "./screens";
 
-function App() {
+const App = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex h-full">
+      <LeftBar />
+      <div className="w-full ml-[18%]">
+        <Home />
+        <About />
+        <Services />
+        <Experience />
+        <Works />
+        <Contact />
+      </div>
     </div>
   );
-}
+};
 
 export default App;
