@@ -1,13 +1,13 @@
 import React from "react";
+import { Container } from "../components/main";
 
 const Works = () => {
   return (
-    <div
-      id="works"
-      className="bg-background w-full h-full flex flex-col items-center justify-center"
-    >
-      <h1 className="font-semibold text-text">Works</h1>
-    </div>
+    <Container className="h-4/6" id="works">
+      <div className="w-4/5 flex flex-col gap-16 h-2/3">
+        <h1 className="font-bold text-3xl mx-36">Works</h1>
+      </div>
+    </Container>
   );
 };
 

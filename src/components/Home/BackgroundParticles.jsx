@@ -20,7 +20,7 @@ const BackgroundParticles = ({ cX, cY }) => {
         className="absolute top-1/4 left-2/4"
         style={{ transform: `translate(${posX}px, ${posY}px)` }}
       >
-        <h1>Particle 1</h1>
+        <h1>Particle 2</h1>
       </div>
     </>
   );
